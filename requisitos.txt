@@ -1,0 +1,1 @@
+hyprpaper zsh oh-my-zsh rofi waybar
