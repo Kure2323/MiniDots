@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cp config/* ~/.config/
-cp .zshrc ~/.zshrc
-cp .nanorc ~/.nanorc
+cp -r config/* ~/.config/
+cp -r .zshrc ~/.zshrc
+cp -r .nanorc ~/.nanorc
 
 cd ~
 
