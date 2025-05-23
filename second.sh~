@@ -25,6 +25,3 @@ cd ~
 
 rm -rf yay heapbytes-zsh
 sudo pacman -R wofi vim
-clear
-echo 'All done, you should reboot by typing reboot'
-

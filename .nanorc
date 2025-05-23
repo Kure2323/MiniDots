@@ -1,0 +1,85 @@
+## Sample initialization file for GNU nano.
+##
+## Please note that you must have configured nano with --enable-nanorc
+## for this file to be read! Also note that this file should not be in
+## DOS or Mac format, and that characters specially interpreted by the
+## shell should not be escaped here.
+##
+## To make sure a value is disabled, use "unset ".
+##
+## For the options that take parameters, the default value is given.
+## Other options are unset by default.
+##
+## Quotes inside string parameters don't have to be escaped with
+## backslashes. The last double quote in the string will be treated as
+## its end. For example, for the "brackets" option, ""')>]}" will match
+## ", ', ), >, ], and }.
+
+## Backup files to filename~.
+set backup
+
+## Enable ~/.nano_history for saving and reading search/replace strings.
+set historylog
+## Don't convert files from DOS/Mac format.
+set noconvert
+## Make the Home key smarter. When Home is pressed anywhere but at the
+## very beginning of non-whitespace characters on a line, the cursor
+## will jump to that beginning (either forwards or backwards). If the
+## cursor is already at that position, it will jump to the true
+## beginning of the line.
+set smarthome
+
+## Use smooth scrolling as the default.
+##set smooth  # Comentado porque no es compatible con tu versión de nano.
+
+## Enable soft line wrapping (AKA full line display).
+set softwrap
+
+## Allow nano to be suspended.
+##set suspend  # Comentado porque no es compatible con tu versión de nano.
+
+## Assign ^S to the savefile action.
+bind ^S savefile main
+
+## Syntax-Highlightning
+## Nanorc files
+include "/usr/share/nano/nanorc.nanorc"
+
+## Makefiles
+include "/usr/share/nano/makefile.nanorc"
+
+## Cascading Style Sheets
+include "/usr/share/nano/css.nanorc"
+
+## HTML
+include "/usr/share/nano/html.nanorc"
+
+## PHP
+include "/usr/share/nano/php.nanorc"
+
+## TeX
+include "/usr/share/nano/tex.nanorc"
+
+## Patch
+include "/usr/share/nano/patch.nanorc"
+
+## Manpages
+include "/usr/share/nano/man.nanorc"
+
+## Perl
+include "/usr/share/nano/perl.nanorc"
+
+## Python
+include "/usr/share/nano/python.nanorc"
+
+## Ruby
+include "/usr/share/nano/ruby.nanorc"
+
+## Java
+include "/usr/share/nano/java.nanorc"
+
+## Bourne shell scripts
+include "/usr/share/nano/sh.nanorc"
+
+## XML-type files
+include "/usr/share/nano/xml.nanorc"
