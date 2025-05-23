@@ -1,21 +1,8 @@
 #!/bin/bash
 
 sudo pacman -Syu
-sudo pacman -S hyprpaper zsh base-devel git thefuck rofi waybar ttf-jetbrains-mono-nerd net-tools bat exa --noconfirm
+sudo pacman -S hyprpaper zsh base-devel git thefuck rofi waybar ttf-jetbrains-mono-nerd net-tools adw-gtk-theme qt5ct qt6ct kvantum kvantum breeze-icons bat exa thunar --noconfirm
 sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
-mkdir ~/hypr/hyprpaper.conf
-hyprpaper -c ~/hypr/hyprpaper.conf
 source ~/.zshrc
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/ohmyzsh/ohmyzsh/tree/master/themes/heapbytes.zsh-theme $ZSH_CUSTOM/themes/heapbytes
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ~
-rm -rf yay
-sudo pacman -R wofi
-
 
