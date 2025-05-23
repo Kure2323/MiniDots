@@ -75,3 +75,15 @@ precmd(){
 
 
 eval $(thefuck --alias)
+
+set_wallpaper(){
+    # Obtiene la ruta absoluta del archivo
+    local wallpaper_path=$(realpath "$1")
+
+    # Escribe la configuración en el archivo
+    echo "preload = $wallpaper_path" > ~/.config/hypr/hyprpaper.conf
+    echo "wallpaper = , $wallpaper_path" >> ~/.config/hypr/hyprpaper.conf
+}
+
+
+

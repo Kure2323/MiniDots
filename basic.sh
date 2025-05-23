@@ -4,6 +4,8 @@ sudo pacman -Syu
 sudo pacman -S hyprpaper zsh base-devel git thefuck rofi waybar ttf-jetbrains-mono-nerd net-tools bat exa --noconfirm
 sudo chsh -s $(which zsh)
 chsh -s $(which zsh)
+mkdir ~/hypr/hyprpaper.conf
+hyprpaper -c ~/hypr/hyprpaper.conf
 source ~/.zshrc
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
