@@ -13,7 +13,7 @@ def install_requirements():
     os.system('makepkg -si --noconfirm')
     os.chdir('..')
     os.rmdir('yay')
-    os.system('sudo pacman -R wofi vim --noconfirm')
+    os.system('sudo pacman -R wofi vim dunst --noconfirm')
     print("Requirements installed successfully.")
 
 def copy_config_files():
