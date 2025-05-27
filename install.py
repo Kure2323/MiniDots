@@ -63,6 +63,7 @@ def apply_themes():
 if __name__ == '__main__':
     print('Installing requirements for Hyprland...')
     install_requirements()
+    install_yay()
     copy_config_files()
     install_oh_my_zsh()
     delete_stuff()
