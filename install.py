@@ -53,13 +53,9 @@ def install_oh_my_zsh():
 
 def apply_themes():
     print('Applying themes...')
-    if os.path.exists('~/.oh-my-zsh') and os.path.exists('~/.zshrc'):
-        subprocess.run(['python3', 'themes.py'])
-        print('Zsh themes applied successfully.')
-    else:
-        print('Zsh is not installed or Oh My Zsh is not found. Skipping Zsh theme application.')
-        print('Please install Zsh and Oh My Zsh manually.')
-        print('Then execute theme.py to apply themes.')
+    
+    subprocess.run(['python3', 'themes.py'])
+    print('Zsh themes applied successfully.')
 
 
 

@@ -4,7 +4,7 @@ def apply_themes():
     print('Applying themes...')
 
     print('Copying themes to Oh My Zsh...')
-    os.system('cp -r themes ~/.oh-my-zsh/themes')
+    os.system('cp -r themes ~/.oh-my-zsh/')
     print('Downloading zsh-autosuggestions...')
     os.system('git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions')
     print('Downloading zsh-syntax-highlighting...')
