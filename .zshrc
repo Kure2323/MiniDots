@@ -79,10 +79,27 @@ eval $(thefuck --alias)
 set_wallpaper(){
     # Obtiene la ruta absoluta del archivo
     local wallpaper_path=$(realpath "$1")
+    local name=$(basename "$wallpaper_path")
+
+
+
+    # Crea el directorio de configuración si no existe
+    mkdir -p ~/.config/hypr/wallpaper
+
+    # Vacía la carpeta de wallpapers
+    rm -rf ~/.config/hypr/wallpaper/*
+
+    # Copia el archivo a la carpeta de wallpapers
+    cp "$wallpaper_path" ~/.config/hypr/wallpaper/
 
     # Escribe la configuración en el archivo
-    echo "preload = $wallpaper_path" > ~/.config/hypr/hyprpaper.conf
-    echo "wallpaper = , $wallpaper_path" >> ~/.config/hypr/hyprpaper.conf
+    echo "preload = ~/.config/hypr/wallpaper/$name" > ~/.config/hypr/hyprpaper.conf
+    echo "wallpaper = , ~/.config/hypr/wallpaper/$name" >> ~/.config/hypr/hyprpaper.conf
+
+    echo "Wallpaper set to $name"
+    # Reload Hyprland to apply the changes
+    hyprctl hyprpaper preload "~/.config/hypr/wallpaper/$name"
+    hyprctl hyprpaper wallpaper ",~/.config/hypr/wallpaper/$name"
 }
 
 
