@@ -9,7 +9,7 @@ def clear():
 def install_requirements():
 
     print("Installing requirements...")
-    os.system('sudo pacman -S swaync nano zsh wireplumber hyprpaper base-devel git '
+    os.system('sudo pacman -S vlc zip unzip tar xfce4-taskmanager swaync nano zsh wireplumber hyprpaper base-devel git '
               'thefuck rofi waybar ttf-jetbrains-mono-nerd net-tools '
               'adw-gtk-theme qt5ct qt6ct breeze-icons bat exa thunar --noconfirm')
     clear()
@@ -36,7 +36,7 @@ def delete_stuff():
 def copy_config_files():
     print("Copying configuration files...")
 
-    os.system('sudo cp -r config/* ~/.config/')
+    os.system('cp -r config/* ~/.config/')
     os.system('cp .nanorc ~/.nanorc')
     clear()
 

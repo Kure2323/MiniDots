@@ -87,8 +87,7 @@ set_wallpaper(){
     mkdir -p ~/.config/hypr/wallpaper
 
     # Vacía la carpeta de wallpapers
-    rm -rf ~/.config/hypr/wallpaper/*
-
+    rm -r ~/.config/hypr/wallpaper/*
     # Copia el archivo a la carpeta de wallpapers
     cp "$wallpaper_path" ~/.config/hypr/wallpaper/
 

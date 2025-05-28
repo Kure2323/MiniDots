@@ -11,7 +11,6 @@ def apply_themes():
     os.system('git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting')
     print('Copying .zshrc to home directory...')
     os.system('cp .zshrc ~/.zshrc')
-    os.system('hyprpaper -c ~/.config/hypr/hyprland.conf &')
 
 
 
