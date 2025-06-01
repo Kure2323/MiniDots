@@ -9,6 +9,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plug
 git clone https://github.com/Keyitdev/sddm-astronaut-theme.git
 sh sddm-astronaut-theme/setup.sh
 
+git clone https://github.com/Lxtharia/minegrub-theme.git
+cd minegrub-theme/
+sudo ./install_theme.sh
+cd ..
+rm -r minegrub-theme
+
 cp .zshrc ~/.zshrc
 
 echo "Themes applied successfully."
