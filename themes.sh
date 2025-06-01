@@ -6,6 +6,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 
+git clone https://github.com/Keyitdev/sddm-astronaut-theme.git
+sh sddm-astronaut-theme/setup.sh
+
 cp .zshrc ~/.zshrc
 
 echo "Themes applied successfully."
