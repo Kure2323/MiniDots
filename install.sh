@@ -3,7 +3,7 @@
 # Requeriments
 echo "Installing requirements..."
 
-sudo pacman -S vlc zip unzip tar xfce4-taskmanager swaync nano zsh wireplumber hyprpaper base-devel git thefuck rofi waybar ttf-jetbrains-mono-nerd net-tools adw-gtk-theme qt5ct qt6ct breeze-icons bat exa thunar --noconfirm
+sudo pacman -S vlc gedit zip unzip tar xfce4-taskmanager swaync nano zsh wireplumber hyprpaper base-devel git thefuck rofi waybar ttf-jetbrains-mono-nerd net-tools adw-gtk-theme qt5ct qt6ct breeze-icons bat exa thunar --noconfirm
 
 clear
 
@@ -45,7 +45,7 @@ echo "Oh My Zsh installed successfully."
 # Delete stuff
 echo "Deleting files and programs we are not going to be using..."
 
-rm -r yay
+sudo rm -r yay
 sudo pacman -R dolphin wofi vim dunst --noconfirm
 
 clear

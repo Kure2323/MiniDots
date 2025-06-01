@@ -13,7 +13,7 @@ git clone https://github.com/Lxtharia/minegrub-theme.git
 cd minegrub-theme/
 sudo ./install_theme.sh
 cd ..
-rm -r minegrub-theme
+sudo rm -r minegrub-theme
 
 cp .zshrc ~/.zshrc
 
