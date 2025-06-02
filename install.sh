@@ -3,7 +3,7 @@
 # Requeriments
 echo "Installing requirements..."
 
-sudo pacman -S vlc gedit zip unzip tar xfce4-taskmanager nano zsh wireplumber hyprpaper base-devel git thefuck rofi waybar ttf-jetbrains-mono-nerd net-tools adw-gtk-theme qt5ct qt6ct breeze-icons bat exa thunar --noconfirm
+sudo pacman -S vlc ark file-roller thunar-archive-plugin gnome-calculator gedit tar xfce4-taskmanager nano zsh wireplumber hyprpaper base-devel git thefuck rofi waybar ttf-jetbrains-mono-nerd net-tools adw-gtk-theme qt5ct qt6ct breeze-icons bat exa thunar --noconfirm
 
 clear
 
