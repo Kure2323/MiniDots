@@ -27,7 +27,8 @@ echo "Yay already installed."
 echo "Copying dotfiles..."
 
 cp -r config/* ~/.config/
-cp .nanorc ~/.nanorc
+cp nanorc ~/.nanorc
+cp -r scripts ~/.scripts
 
 clear
 

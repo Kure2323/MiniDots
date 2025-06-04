@@ -17,7 +17,7 @@ sudo rm -r minegrub-theme ssdm-astronaut-theme
 sudo cp grub /etc/default/
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-cp .zshrc ~/.zshrc
+cp zshrc ~/.zshrc
 
 echo "Themes applied successfully."
 echo "To set a wallpaper, run the following command: 'set_wallpaper <path_to_wallpaper>'"
