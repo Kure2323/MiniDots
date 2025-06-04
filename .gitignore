@@ -1,0 +1,11 @@
+# Ignorar archivos de respaldo
+*~
+
+# Ignorar archivos de configuración específicos del editor
+.vscode/
+.idea/
+
+# Ignorar directorios de compilación o dependencias
+node_modules/
+build/
+.env
