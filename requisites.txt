@@ -10,9 +10,8 @@ zsh
 wireplumber 
 hyprpaper 
 base-devel 
-git 
 thefuck 
-rofi 
+rofi
 waybar 
 ttf-jetbrains-mono-nerd 
 net-tools 
@@ -26,3 +25,11 @@ thunar
 grim
 slurp
 feh
+gvfs 
+gvfs-mtp 
+gvfs-gphoto2 
+gvfs-afc 
+thunar-volman 
+udisks2
+polkit-gnome
+firefox
