@@ -13,7 +13,9 @@ git clone https://github.com/Lxtharia/minegrub-theme.git
 cd minegrub-theme/
 sudo ./install_theme.sh
 cd ..
-sudo rm -r minegrub-theme
+sudo rm -r minegrub-theme ssdm-astronaut-theme
+sudo cp grub /etc/default/
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 cp .zshrc ~/.zshrc
 

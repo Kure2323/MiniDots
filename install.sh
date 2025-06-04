@@ -4,6 +4,8 @@
 echo "Installing requirements..."
 
 sudo pacman -S $(cat requisites.txt) --noconfirm
+sudo systemctl enable tlp.service
+sudo tlp start
 
 clear
 
@@ -38,9 +40,14 @@ echo "Otherwise, please do ctrl + d to go back to the installation script"
 
 sleep 5
 
+export RUNZSH=no
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Oh My Zsh installed successfully."
+
+sleep 3
+
 
 # Delete stuff
 echo "Deleting files and programs we are not going to be using..."
