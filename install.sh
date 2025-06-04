@@ -3,7 +3,7 @@
 # Requeriments
 echo "Installing requirements..."
 
-sudo pacman -S $(cat requisites.txt) --noconfirm &
+sudo pacman -S $(cat requisites.txt) --noconfirm
 
 clear
 

@@ -15,9 +15,6 @@
 ## its end. For example, for the "brackets" option, ""')>]}" will match
 ## ", ', ), >, ], and }.
 
-## Backup files to filename~.
-set backup
-
 ## Enable ~/.nano_history for saving and reading search/replace strings.
 set historylog
 ## Don't convert files from DOS/Mac format.
