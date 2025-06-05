@@ -1,32 +1,46 @@
-# Simple Keybindings
+# **Basic Keybindings**
 
-SUPER + T = Terminal(Kitty)
-SUPER + F = Firefox
-SUPER + Q = Kill Active Window
-SUPER + M = Exit (Go back to sddm)
-SUPER + E = File Manager(Thunar)
-SUPER + W = Toggle Floating Active Window
-SUPER + A = Open launcher(rofi)
-SUPER + P = Take Screenshot
-SUPER + S = Fullscreen Active Window
-SUPER + Backspace = Power Menu
+## **General Actions**
 
-# Move Focus
+- **SUPER + T** = Open terminal (Kitty)
+- **SUPER + F** = Open Firefox
+- **SUPER + Q** = Close active window
+- **SUPER + M** = Log out (go back to sddm)
+- **SUPER + E** = Open file manager (Thunar)
+- **SUPER + W** = Toggle floating active window
+- **SUPER + A** = Open launcher (rofi)
+- **SUPER + P** = Take screenshot
+- **SUPER + S** = Fullscreen active window
+- **SUPER + Backspace** = Power menu
 
-SUPER + Arrows
+---
 
-# Switch Workspaces
+## **Move Focus**
 
-SUPER + [0-9] OR SUPER + SCROLL
-In laptop you can also swipe 3 fingers on the touchpad to change Workspace
-# Switch To Special Workspace
+- **SUPER + Arrow keys** = Move focus between windows
 
-SUPER + R
+---
 
-# Mve Focused Window To Special Workspace
+## **Switch Workspaces**
 
-SUPER + SHIFT + R 
+- **SUPER + [0-9]** = Switch to workspace [0-9]
+- **SUPER + SCROLL** = Switch workspaces with mouse scroll
+- **Three-finger swipe (on laptops)** = Change workspace
 
-# Switch Focused Window to Workspace [0-9]
+---
 
-SUPER + SHIFT + [0-9]
+## **Switch Focused Window to Workspace [0-9]**
+
+- **SUPER + SHIFT + [0-9]** = Move focused window to workspace [0-9]
+
+---
+
+## **Switch to Special Workspace**
+
+- **SUPER + R** = Switch to special workspace
+
+---
+
+## **Move Focused Window to Special Workspace**
+
+- **SUPER + SHIFT + R** = Move focused window to special workspace
