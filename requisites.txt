@@ -1,4 +1,3 @@
-tlp
 ark 
 file-roller 
 thunar-archive-plugin 
@@ -6,11 +5,9 @@ gnome-calculator gedit
 tar 
 xfce4-taskmanager 
 nano 
-zsh 
 wireplumber 
 hyprpaper 
 base-devel 
-thefuck 
 rofi
 waybar 
 ttf-jetbrains-mono-nerd 
