@@ -10,7 +10,7 @@ clear
 echo "Requirements installed successfully."
 
 # Install yay
-read -p "Would you want to download yay for AUR packages? [y/N]" aur
+read -p "Would you want to download yay for AUR packages? [y/N]: " aur
 
 if [ "$aur" == "y" ]; then
 	git clone https://aur.archlinux.org/yay.git
@@ -36,7 +36,7 @@ echo "Dotfiles copied successfully"
 
 # Install oh-my-zsh
 
-read -p "Would you like to download zsh and oh-my-zsh? [y/N]" res
+read -p "Would you like to download zsh and oh-my-zsh? [y/N]: " res
 
 if [ "$res" == "y" ]; then
 	export RUNZSH=no
@@ -53,18 +53,19 @@ if [ "$res" == "y" ]; then
 
 	cp zshrc ~/.zshrc
 fi
-
+clear
 
 # SDDM ASTRONAUT THEME
-read -p "Would you like to set a sddm theme from sddm-astronaut-theme? [y/N]" sddm
+read -p "Would you like to set a sddm theme from sddm-astronaut-theme? [y/N]: " sddm
 
 if [ "$sddm" == "y" ]; then
 
         git clone https://github.com/Keyitdev/sddm-astronaut-theme.git
         sh sddm-astronaut-theme/setup.sh
 fi
+clear
 
-read -p "Would you like to install and set Minegrub? [y/N]" grub
+read -p "Would you like to install and set Minegrub? [y/N]: " grub
 
 if [ "$grub" == "y" ]; then
         git clone https://github.com/Lxtharia/minegrub-theme.git
@@ -74,6 +75,7 @@ if [ "$grub" == "y" ]; then
         sudo cp grub /etc/default/
         sudo grub-mkconfig -o /boot/grub/grub.cfg
 fi
+clear
 
 # Delete stuff
 echo "Deleting files and programs we are not going to be using..."
@@ -83,6 +85,6 @@ sudo pacman -R dolphin wofi vim --noconfirm
 
 clear
 
-echo "All useless stuff deleted."
 echo "Installation completed successfully"
+echo "To set a wallpaper type: set_wallpaper path/to/wallpaper.png"
 echo "Please reboot your system to apply changes."
