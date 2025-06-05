@@ -4,24 +4,24 @@
 echo "Installing requirements..."
 
 sudo pacman -S $(cat requisites.txt) --noconfirm
-sudo systemctl enable tlp.service
-sudo tlp start
 
 clear
 
 echo "Requirements installed successfully."
 
 # Install yay
-echo "Installing yay for AUR packages"
+read -p "Would you want to download yay for AUR packages? [y/N]" aur
 
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
-cd ..
+if [ "$aur" == "y" ]; then
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -si --noconfirm
+	cd ..
 
-clear
+	clear
 
-echo "Yay already installed."
+	echo "Yay already installed."
+fi
 
 # Copy config files
 echo "Copying dotfiles..."
@@ -35,36 +35,54 @@ clear
 echo "Dotfiles copied successfully"
 
 # Install oh-my-zsh
-echo "Installing Oh My Zsh..."
-echo 'Once the installation in complete, you sould see a message saying "Oh My Zsh installed successfully."'
-echo "Otherwise, please do ctrl + d to go back to the installation script"
 
-sleep 5
+read -p "Would you like to download zsh and oh-my-zsh? [y/N]" res
 
-export RUNZSH=no
+if [ "$res" == "y" ]; then
+	export RUNZSH=no
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "Oh My Zsh installed successfully."
+	echo "Oh My Zsh installed successfully."
 
-sleep 3
+	cp -r themes ~/.oh-my-zsh/
 
+	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+
+	cp zshrc ~/.zshrc
+fi
+
+
+# SDDM ASTRONAUT THEME
+read -p "Would you like to set a sddm theme from sddm-astronaut-theme? [y/N]" sddm
+
+if [ "$sddm" == "y" ]; then
+
+        git clone https://github.com/Keyitdev/sddm-astronaut-theme.git
+        sh sddm-astronaut-theme/setup.sh
+fi
+
+read -p "Would you like to install and set Minegrub? [y/N]" grub
+
+if [ "$grub" == "y" ]; then
+        git clone https://github.com/Lxtharia/minegrub-theme.git
+        cd minegrub-theme/
+        sudo ./install_theme.sh
+        cd ..
+        sudo cp grub /etc/default/
+        sudo grub-mkconfig -o /boot/grub/grub.cfg
+fi
 
 # Delete stuff
 echo "Deleting files and programs we are not going to be using..."
 
-sudo rm -r yay
+sudo rm -r yay sddm-astronaut-theme minegrub-theme
 sudo pacman -R dolphin wofi vim --noconfirm
 
 clear
 
 echo "All useless stuff deleted."
-
-# Apply themes
-echo "Applying themes"
-
-sh themes.sh
-
-echo "All themes applied"
 echo "Installation completed successfully"
 echo "Please reboot your system to apply changes."
