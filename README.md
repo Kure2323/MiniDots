@@ -26,14 +26,12 @@ This project makes use of various open-source repositories. Below are the credit
 
 ## Installation
 
-1. **Requirements**
-   The installation script installs a series of necessary dependencies for the system, using `pacman` and `yay` (for AUR packages). For more details on dependencies, refer to the `requisites.txt` file.
-
-2. **Install Oh My Zsh and Plugins**
-   The script also installs and configures **Oh My Zsh** along with several useful plugins like `zsh-autosuggestions` and `zsh-syntax-highlighting`.
-
-3. **Apply Themes**
-   The `themes.sh` script applies various visual themes to the system, including themes for SDDM and GRUB, as well as themes for Zsh.
+The installation script installs everything, you just need a minimal install of arch linux and git.
+```bash
+git clone https://github.com/Kure2323/Linux-Config.git
+cd Linux-Config
+sh install.sh
+```
 
 ---
 
