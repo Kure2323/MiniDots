@@ -41,6 +41,7 @@ read -p "Would you like to download zsh and oh-my-zsh? [y/N]: " res
 if [ "$res" == "y" ]; then
 	export RUNZSH=no
 
+	sudo pacman -S zsh bat --noconfirm
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 	echo "Oh My Zsh installed successfully."

@@ -16,7 +16,6 @@ adw-gtk-theme
 qt5ct 
 qt6ct 
 breeze-icons 
-bat 
 exa 
 thunar
 grim
