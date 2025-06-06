@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1749203042194969-1</unique-id>
+	<command>kitty --directory %f</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>preferences-desktop-wallpaper</icon>
+	<name>Set as wallpaper</name>
+	<submenu></submenu>
+	<unique-id>1749203711323288-2</unique-id>
+	<command>/bin/zsh -i -c &apos;source ~/.zshrc &amp;&amp; set_wallpaper %f&apos;</command>
+	<description>Set the selected image as wallpaper</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<image-files/>
+</action>
+</actions>

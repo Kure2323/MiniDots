@@ -1,3 +1,9 @@
+hyprland
+sddm
+xorg-xwayland
+xorg-xwininfo
+xorg-xprop
+kitty
 ark 
 file-roller 
 thunar-archive-plugin 

@@ -3,11 +3,20 @@
 # Requeriments
 echo "Installing requirements..."
 
+sudo pacman -Syu --noconfirm
 sudo pacman -S $(cat requisites.txt) --noconfirm
 
 clear
 
+sudo systemctl enable sddm.service
+sudo sytemctl start sddm.service
+
+sudo echo -e "[Desktop Entry]\nName=Hyprland\nComment=Wayland session using Hyprland compositor\nExec=hyprland\nType=Application\nDesktopName=Hyprland" > hyprland.desktop
+
+
 echo "Requirements installed successfully."
+
+
 
 # Install yay
 read -p "Would you want to download yay for AUR packages? [y/N]: " aur
@@ -26,6 +35,7 @@ fi
 # Copy config files
 echo "Copying dotfiles..."
 
+mkdir ~/.config
 cp -r config/* ~/.config/
 cp nanorc ~/.nanorc
 cp -r scripts ~/.scripts
@@ -81,7 +91,7 @@ clear
 # Delete stuff
 echo "Deleting files and programs we are not going to be using..."
 
-sudo rm -r yay sddm-astronaut-theme minegrub-theme
+sudo rm -r yay ../sddm-astronaut-theme minegrub-theme
 sudo pacman -R dolphin wofi vim --noconfirm
 
 clear
