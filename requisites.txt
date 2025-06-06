@@ -3,6 +3,7 @@ sddm
 xorg-xwayland
 xorg-xwininfo
 xorg-xprop
+network-manager-applet
 kitty
 ark 
 file-roller 

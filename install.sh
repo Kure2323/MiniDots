@@ -9,10 +9,6 @@ sudo pacman -S $(cat requisites.txt) --noconfirm
 clear
 
 sudo systemctl enable sddm.service
-sudo sytemctl start sddm.service
-
-sudo echo -e "[Desktop Entry]\nName=Hyprland\nComment=Wayland session using Hyprland compositor\nExec=hyprland\nType=Application\nDesktopName=Hyprland" > hyprland.desktop
-
 
 echo "Requirements installed successfully."
 
@@ -91,11 +87,23 @@ clear
 # Delete stuff
 echo "Deleting files and programs we are not going to be using..."
 
-sudo rm -r yay ../sddm-astronaut-theme minegrub-theme
+sudo rm -r yay sddm-astronaut-theme minegrub-theme
 sudo pacman -R dolphin wofi vim --noconfirm
 
 clear
 
 echo "Installation completed successfully"
-echo "To set a wallpaper type: set_wallpaper path/to/wallpaper.png"
-echo "Please reboot your system to apply changes."
+sleep 3
+
+clear
+echo "The system will reboot in 3..."
+sleep 1
+clear
+
+echo "The system will reboot in 2..."
+sleep 1
+clear
+
+echo "The system will reboot in 1..."
+sleep 1
+reboot
