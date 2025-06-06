@@ -74,8 +74,6 @@ precmd(){
 
 
 
-eval $(thefuck --alias)
-
 set_wallpaper(){
     # Obtiene la ruta absoluta del archivo
     local wallpaper_path=$(realpath "$1")
