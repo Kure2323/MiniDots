@@ -9,6 +9,7 @@ sudo pacman -S $(cat requisites.txt) --noconfirm
 clear
 
 sudo systemctl enable sddm.service
+sudo rm /usr/share/wayland-sessions/hyprland-uwsm.desktop
 
 echo "Requirements installed successfully."
 
