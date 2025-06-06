@@ -94,7 +94,7 @@ clear
 read -p "Would you like to delete the yay, sddm-astronau-theme and minegrub-theme folders? [y/N]: " del
 
 if ["$del" == "y" ]; then
-	sudo rm -r ~/sddm-astronaut-theme yay minegrub-theme
+	sudo rm -r sddm-astronaut-theme yay minegrub-theme
 fi
 clear
 

@@ -11,6 +11,8 @@ thunar-archive-plugin
 gnome-calculator gedit 
 tar 
 xfce4-taskmanager 
+dunst
+pavucontrol
 nano 
 wireplumber 
 hyprpaper 
