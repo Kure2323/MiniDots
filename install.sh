@@ -13,7 +13,12 @@ sudo rm /usr/share/wayland-sessions/hyprland-uwsm.desktop
 
 echo "Requirements installed successfully."
 
+read -p "Is your GPU an Nvidia card? [y/N]: " nvidia
 
+if [ "$nvidia" == "y" ]; then
+	sudo pacman -S nvidia --noconfirm
+fi
+clear
 
 # Install yay
 read -p "Would you want to download yay for AUR packages? [y/N]: " aur
