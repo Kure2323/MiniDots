@@ -87,7 +87,7 @@ clear
 # Delete stuff
 echo "Deleting files and programs we are not going to be using..."
 
-sudo rm -r yay sddm-astronaut-theme minegrub-theme
+sudo rm -r yay ~/sddm-astronaut-theme minegrub-theme
 sudo pacman -R dolphin wofi vim --noconfirm
 
 clear
