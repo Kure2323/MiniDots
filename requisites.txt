@@ -7,6 +7,7 @@ network-manager-applet
 kitty
 ark 
 file-roller 
+vlc
 thunar-archive-plugin 
 gnome-calculator gedit 
 tar 
