@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "memory", "temperature"],
     "modules-center": ["clock"],
-    "modules-right": ["wireplumber", "battery", "backlight", "hyprland/language", "network", "bluetooth", "tray"],
+    "modules-right": ["wireplumber", "battery", "backlight", "network", "tray"],
 
     "hyprland/workspaces": {
         "format": "<span size='larger'>{icon}</span>",
@@ -45,7 +45,7 @@
 
     "backlight": {
         "format": "\udb80\udcdf  {percent}%",
-	"min-birght": 5
+	"min-bright": 5
     },
 
     "memory": {
@@ -66,6 +66,7 @@
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "{ifname}",
         "tooltip-format-disconnected": "Disconnected",
+	"on-click": "kitty --class nmtui-term -e nmtui"
     },
 
     "bluetooth": {
