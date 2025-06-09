@@ -38,3 +38,4 @@ thunar-volman
 udisks2
 polkit-gnome
 firefox
+python-pywal16

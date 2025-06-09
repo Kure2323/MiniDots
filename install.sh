@@ -1,10 +1,24 @@
 #!/bin/bash
 
+# Install yay
+read -p "Would you want to download yay for AUR packages? [y/N]: " aur
+
+if [ "$aur" == "y" ]; then
+        git clone https://aur.archlinux.org/yay.git
+        cd yay
+        makepkg -si --noconfirm
+        cd ..
+
+        clear
+
+        echo "Yay already installed."
+fi
+
 # Requeriments
 echo "Installing requirements..."
 
 sudo pacman -Syu --noconfirm
-sudo pacman -S $(cat requisites.txt) --noconfirm
+yay -S $(cat requisites.txt) --noconfirm --needed
 
 clear
 
@@ -19,20 +33,6 @@ if [ "$nvidia" == "y" ]; then
 	sudo pacman -S nvidia --noconfirm
 fi
 clear
-
-# Install yay
-read -p "Would you want to download yay for AUR packages? [y/N]: " aur
-
-if [ "$aur" == "y" ]; then
-	git clone https://aur.archlinux.org/yay.git
-	cd yay
-	makepkg -si --noconfirm
-	cd ..
-
-	clear
-
-	echo "Yay already installed."
-fi
 
 # Copy config files
 echo "Copying dotfiles..."
