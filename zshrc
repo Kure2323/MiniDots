@@ -89,6 +89,8 @@ set_wallpaper(){
     # Copia el archivo a la carpeta de wallpapers
     cp "$wallpaper_path" ~/.config/hypr/wallpaper/
 
+    wal -i ~/.config/hypr/wallpaper/$name
+
     # Escribe la configuración en el archivo
     echo "preload = ~/.config/hypr/wallpaper/$name" > ~/.config/hypr/hyprpaper.conf
     echo "wallpaper = , ~/.config/hypr/wallpaper/$name" >> ~/.config/hypr/hyprpaper.conf

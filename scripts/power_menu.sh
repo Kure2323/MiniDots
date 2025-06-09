@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usar rofi para mostrar el menú
-option=$(echo -e "Shutdown\nReboot\nSuspend" | rofi -dmenu -p "Select action:" -theme arthur)
+option=$(echo -e "Shutdown\nReboot\nSuspend" | rofi -dmenu -p "Select action:" -theme ~/.cache/wal/colors-rofi-dark.rasi)
 
 case $option in
   Shutdown)

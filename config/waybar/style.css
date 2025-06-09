@@ -1,6 +1,7 @@
 @define-color foreground #eeeeee;
 @define-color foreground-inactive #aaaaaa;
 @define-color background rgba(0,0,0,0);
+@import url("/home/polete/.cache/wal/colors-waybar.css");
 
 * {
     font-family: JetBrainsMono Nerd Font;
