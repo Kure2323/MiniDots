@@ -63,7 +63,7 @@ alias gp='git push origin master'
 #alias lvim='$HOME/.local/bin/lvim'
 alias pinstall='sudo pacman -S'
 alias update='sudo pacman -Syu --noconfirm'
-alias i='yay -S --noconfirm'
+alias i='yay -S'
 alias s='yay -s -S'
 alias cat='bat'
 
