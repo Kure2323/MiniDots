@@ -1,5 +1,6 @@
 # Ignorar archivos de respaldo
 *~
+.png
 hyprpaper.conf
 # Ignorar archivos de configuración específicos del editor
 .vscode/
