@@ -10,3 +10,7 @@ hyprpaper.conf
 node_modules/
 build/
 .env
+
+*.bak
+
+*.save

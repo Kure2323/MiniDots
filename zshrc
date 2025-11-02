@@ -91,6 +91,7 @@ set_wallpaper(){
     cp "$wallpaper_path" ~/.config/hypr/wallpaper/
 
     wal -i ~/.config/hypr/wallpaper/$name
+    walcord
 
     # Escribe la configuración en el archivo
     echo "preload = ~/.config/hypr/wallpaper/$name" > ~/.config/hypr/hyprpaper.conf
@@ -104,3 +105,5 @@ set_wallpaper(){
 
 
 
+
+eval $(thefuck --alias)
