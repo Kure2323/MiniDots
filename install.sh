@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Prueba de commit -> No sirve de nada, estoy probando git con ssh
 # Install yay
 read -p "Would you want to download yay for AUR packages? [y/N]: " aur
 
