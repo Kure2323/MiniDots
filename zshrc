@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
+export EDITOR=nano
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -55,13 +55,12 @@ alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
-alias gp='git push origin master'
+alias gp='git push origin main'
 
 #my
 
 #alias nvim='$HOME/.local/bin/lvim'
 #alias lvim='$HOME/.local/bin/lvim'
-alias pinstall='sudo pacman -S'
 alias update='sudo pacman -Syu --noconfirm'
 alias i='yay -S'
 alias s='yay -s -S'
@@ -91,7 +90,6 @@ set_wallpaper(){
     cp "$wallpaper_path" ~/.config/hypr/wallpaper/
 
     wal -i ~/.config/hypr/wallpaper/$name
-    walcord
 
     # Escribe la configuración en el archivo
     echo "preload = ~/.config/hypr/wallpaper/$name" > ~/.config/hypr/hyprpaper.conf
@@ -105,5 +103,3 @@ set_wallpaper(){
 
 
 
-
-eval $(thefuck --alias)

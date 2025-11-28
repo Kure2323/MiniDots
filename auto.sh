@@ -2,6 +2,8 @@
 
 cd ~
 
+sudo rm MiniDots/config/hypr/wallpaper/*
+
 sudo cp .scripts/* MiniDots/scripts -r
 sudo cp .config/hypr MiniDots/config -r
 sudo cp .config/dunst MiniDots/config -r

@@ -39,3 +39,5 @@ udisks2
 polkit-gnome
 firefox
 python-pywal16
+hyprshade-git
+swaylock

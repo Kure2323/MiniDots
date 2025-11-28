@@ -7,10 +7,10 @@ PROMPT='
 RPROMPT='[%F{red}%?%f]'
 
 get_ip_address() {
-  if [[ -n "$(ifconfig enp8s0 2>/dev/null)" ]]; then
-    echo "%{$fg[green]%}$(ifconfig enp8s0 | awk '/inet / {print $2}')%{$reset_color%}"
-  elif [[ -n "$(ifconfig wlan0 2>/dev/null)" ]]; then
-    echo "%{$fg[green]%}$(ifconfig wlan0 | awk '/inet / {print $2}')%{$reset_color%}"
+  if [[ -n "$(ifconfig wlp3s0 2>/dev/null)" ]]; then
+    echo "%{$fg[green]%}$(ifconfig wlp3s0 | awk '/inet / {print $2}')%{$reset_color%}"
+  elif [[ -n "$(ifconfig wlp3s0mon 2>/dev/null)" ]]; then
+    echo "%{$fg[green]%}$(ifconfig wlp3s0mon | awk '/inet / {print $2}')%{$reset_color%}"
   else
     echo "%{$fg[red]%}No IP%{$reset_color%}"
   fi

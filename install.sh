@@ -1,5 +1,5 @@
 #!/bin/bash
-# Prueba de commit -> No sirve de nada, estoy probando git con ssh
+
 # Install yay
 read -p "Would you want to download yay for AUR packages? [y/N]: " aur
 
@@ -38,9 +38,11 @@ clear
 echo "Copying dotfiles..."
 
 mkdir ~/.config
+mkdir ~/.scripts
+
 cp -r config/* ~/.config/
 cp nanorc ~/.nanorc
-cp -r scripts ~/.scripts
+cp -r scripts/* ~/.scripts
 
 clear
 
